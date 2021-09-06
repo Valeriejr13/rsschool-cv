@@ -21,4 +21,4 @@ function factorial (n) {
   }
 ```
 * I have a bachelor degree in Economics and master degree in Management from Novosibirsk State University. Was studying 1 semester in Spain (Universidad de Cadiz). In 2021 finished Web Developer Course made by Rob Percival.
-
+* English level - C1. My master program was completely in English, my master thesis was also written in English.
