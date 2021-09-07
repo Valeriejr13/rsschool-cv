@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Valeria Pinzon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;600&family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header_content">
+                <figure class="header_photo">
+                    <img class="cv_photo" src="images/cv_photo.png" alt="photo">
+                </figure>
+                <div class="header_text">
+                    <h1 class="name">Valeria Pinzon</h1>
+                    <div class="title">Future Web Developer</div>
+                    <div class="contact_info">
+                        <div class="phone">
+                            <i class="fas fa-phone-square"></i>
+                            8-903-935-07-02
+                        </div>
+                        <div class="email">
+                            <i class="fas fa-envelope"></i>
+                            valeriejr13@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="cv_content">
+            <section class="summary">
+                <h6 class="section_title">Summary</h6>
+                <div class="section_content">My goal is to become a frontend developer in 1 year. I am planning on doing that by practicing every day, being hard-working and persistent</div>
+            </section>
+            <section class="skills">
+                <h6 class="section_title">Skills</h6>
+                <div class="section_content">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="code_example">
+                <h6 class="section_title">Code example</h6>
+                <div class="section_content">
+<pre><code>
+//This function should return n!
+function factorial (n) {
+    if (n &lt; 0)
+    return null;
+
+    if (n === 0 || n === 1)
+    return 1;
+
+    for (let i = n; i > 1; i--) {
+      n = n * (i - 1);
+    };
+  return n;
+  }</code></pre>
+                </div>
+            </section>
+            <section class="education">
+                <h6 class="section_title">Education</h6>
+                <div class="section_content">
+                    <div class="education_item">
+                        <div class="graduation_year">2021</div>
+                        <div class="education_info">
+                            <div class="university">Udemy course by Rob Percival</div>
+                            <div class="degree">The Complete Web Developer Course 2.0</div>
+                        </div>
+                    </div>
+                    <div class="education_item">
+                        <div class="graduation_year">2018</div>
+                        <div class="education_info">
+                            <div class="university">University of Cadiz (Spain)</div>
+                            <div class="degree">Exchange program in Management</div>
+                        </div>
+                    </div>
+                    <div class="education_item">
+                        <div class="graduation_year">2018</div>
+                        <div class="education_info">
+                            <div class="university">Novosibirsk State University</div>
+                            <div class="degree">Master of Management (program in English language)</div>
+                        </div>
+                    </div>
+                    <div class="education_item">
+                        <div class="graduation_year">2016</div>
+                        <div class="education_info">
+                            <div class="university">Novosibirsk State University</div>
+                            <div class="degree">Bachelor of Economics</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="english">
+                <h6 class="section_title">English level</h6>
+                <div class="section_content">English level - C1. My master program was completely in English, master thesis was also written in English. <br> Spanish level - B1. </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
