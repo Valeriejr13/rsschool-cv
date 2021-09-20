@@ -7,111 +7,264 @@
     <title>CV Valeria Pinzon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;600&family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;500;600;900&family=Nunito+Sans:wght@800&family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
     />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
 </head>
+
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header_content">
-                <figure class="header_photo">
-                    <img class="cv_photo" src="images/cv_photo.png" alt="photo">
-                </figure>
-                <div class="header_text">
-                    <h1 class="name">Valeria Pinzon</h1>
-                    <div class="title">Future Web Developer</div>
-                    <div class="contact_info">
-                        <div class="phone">
-                            <i class="fas fa-phone-square"></i>
-                            8-903-935-07-02
+    <header class="header">
+        <div class="header_container">
+            <a class="logo" href="#">VP</a>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a class="nav_link" href="#about">About</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#skills">Skills</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#projects">My recent projects</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#code_example">Code Example</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#education">Education</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#languages">Languages</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle_item">Menu</span>
+            </button>
+       </div>
+    </header>
+    <main>
+        <section class="hello">
+            <div class="container">
+                <div class="hello_wrap">
+                    <div class="hello_img">
+                        <img class="girl_coding" src="images/girl_coding.svg" alt="girl coding">
+                    </div>
+                    <div class="hello_text">
+                        <h3 class="greetings">Hello there!</h3>
+                        <h1 class="name">I'm Valeria Pinzon</h1>
+                        <h2 class="job_title">Future Web Developer</h2>
+                        <a class="contact_btn" href="mailto:valeriejr13@gmail.com">Contact me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="wave">
+            <img src="images/wave-bg.svg" alt="wave">
+        </div>
+        <section id="about">
+            <div class="container">
+                <div class="about_wrap">
+                    <div class="personal_info">
+                        <h4>Hello! My name is Valeria Pinzon.</h4>
+                        <div class="about_text">I am passionate about creating websites and I'm learning how to do it every day. It is exciting how many cool and interesting things can be done using HTML, CSS and Javascript. My goal is to become a frontend developer in 1 year. I am planning on doing that by practicing every day, being hard-working and persistent.</div>
+                        <div class="contacts">
+                            <ul class="contacts_list">
+                                <li>Email:     <strong>valeriejr13@gmail.com</strong></li>
+                                <li>Skype:    <strong>username@skype.com</strong></li>
+                                <li>Phone:   <strong>8-903-935-07-02</strong></li>
+                                <li>City:        <strong>Novosibirsk, Russia</strong></li>
+                                <li>Status:   <strong>Available</strong></li>
+                            </ul>
                         </div>
-                        <div class="email">
-                            <i class="fas fa-envelope"></i>
-                            valeriejr13@gmail.com
+                    </div>
+                    <div class="photo">
+                        <img src="images/cv_photo.png" alt="photo" class="photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <div class="section_wrap">
+                    <h5 class="section_title">My skills</h5>
+                    <ul class="skills_list">
+                        <li class="skills_item">Git</li>
+                        <li class="skills_item">Figma</li>
+                        <li class="skills_item">HTML, CSS</li>
+                        <li class="skills_item">Javascript</li>
+                        <li class="skills_item">Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container"> 
+                <div class="project_wrap">
+                    <h5 class="section_title project_title">My recent projects</h5>
+                    <div class="row row_reverse">
+                        <div class="col col_img">
+                            <a href="https://rolling-scopes-school.github.io/valeriejr13-JSFEPRESCHOOL/museum/" target="_blank"><img class="project_img" src="images/project-1.png" alt="project_picture"></a>
+                        </div>
+                        <div class="col col_text">
+                            <div class="project">
+                                <p class="stack">Frontend / HTML / CSS / JavaScript</p>
+                                <h6 class="project_name">Museum</h6>
+                                <p class="project_description">
+                                    This website contains information about the famous museum Louvre. Users can find details about famous painting, links to virtual tours, and pick amount of tickets to buy. 
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col_text col_text_left">
+                            <div class="project">
+                                <p class="stack">Frontend / HTML / CSS / JavaScript</p>
+                                <h6 class="project_name">Mogo</h6>
+                                <p class="project_description">MoGo is a template of a website of a WEB agency. It includes many useful components like milestones, accordions, portfolio thumbnails, testimonial carousels and other widgets.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col_img">
+                            <a href="https://34ryc.csb.app/" target="_blank"><img class="project_img" src="images/project-2.png" alt="project_picture"></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <main class="cv_content">
-            <section class="summary">
-                <h6 class="section_title">Summary</h6>
-                <div class="section_content">My goal is to become a frontend developer in 1 year. I am planning on doing that by practicing every day, being hard-working and persistent</div>
-            </section>
-            <section class="skills">
-                <h6 class="section_title">Skills</h6>
-                <div class="section_content">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="code_example">
-                <h6 class="section_title">Code example</h6>
-                <div class="section_content">
-<pre><code>
-//This function should return n!
+        </section>
+        <section id="code_example">
+            <div class="container">
+                <div class="code_wrap">
+                    <h5 class="section_title">Code example</h5>
+                    <div class="code">
+                        <pre><code class="language-javascript">
+Task: This function should return n!
+Below is my solution of the problem:
+
 function factorial (n) {
     if (n &lt; 0)
     return null;
-
+                            
     if (n === 0 || n === 1)
     return 1;
-
-    for (let i = n; i > 1; i--) {
-      n = n * (i - 1);
+                            
+    for (let i = n; i &gt; 1; i--) {
+        n = n * (i - 1);
     };
-  return n;
-  }</code></pre>
-                </div>
-            </section>
-            <section class="education">
-                <h6 class="section_title">Education</h6>
-                <div class="section_content">
-                    <div class="education_item">
-                        <div class="graduation_year">2021</div>
-                        <div class="education_info">
-                            <div class="university">Udemy course by Rob Percival</div>
-                            <div class="degree">The Complete Web Developer Course 2.0</div>
-                        </div>
-                    </div>
-                    <div class="education_item">
-                        <div class="graduation_year">2018</div>
-                        <div class="education_info">
-                            <div class="university">University of Cadiz (Spain)</div>
-                            <div class="degree">Exchange program in Management</div>
-                        </div>
-                    </div>
-                    <div class="education_item">
-                        <div class="graduation_year">2018</div>
-                        <div class="education_info">
-                            <div class="university">Novosibirsk State University</div>
-                            <div class="degree">Master of Management (program in English language)</div>
-                        </div>
-                    </div>
-                    <div class="education_item">
-                        <div class="graduation_year">2016</div>
-                        <div class="education_info">
-                            <div class="university">Novosibirsk State University</div>
-                            <div class="degree">Bachelor of Economics</div>
-                        </div>
+    return n;
+}</code></pre>
+
                     </div>
                 </div>
-            </section>
-            <section class="english">
-                <h6 class="section_title">English level</h6>
-                <div class="section_content">English level - C1. My master program was completely in English, master thesis was also written in English. <br> Spanish level - B1. </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+        <section id="education">
+            <div class="container">
+                <div class="section_wrap">
+                    <h5 class="section_title">My education</h5>
+                        <div class="education_item __current">
+                            <div class="education_header">
+                                <h6 class="place">RS SCHOOL</h6>
+                            </div>
+                            <div class="education_body">
+                                <div class="year">2021 - 2022</div>
+                                <div class="degree">JavaScript/Front-end 2021Q3</div>
+                            </div>
+                        </div>
+                        <div class="education_item">
+                            <div class="education_header">
+                                <h6 class="place">UDEMY COURSE BY ROB PERCIVAL</h6>
+                            </div>
+                            <div class="education_body">
+                                <div class="year">2021</div>
+                                <div class="degree">The Complete Web Developer Course 2.0</div>
+                            </div>
+                        </div>
+                        <div class="education_item">
+                            <div class="education_header">
+                                <h6 class="place">UNIVERSITY OF CADIZ (SPAIN)</h6>
+                            </div>
+                            <div class="education_body">
+                                <div class="year">2018</div>
+                                <div class="degree">Exchange program in Management</div>
+                            </div>
+                        </div>
+                        <div class="education_item">
+                            <div class="education_header">
+                                <h6 class="place">NOVOSIBIRSK STATE UNIVERSITY</h6>
+                            </div>
+                            <div class="education_body">
+                                <div class="year">2018</div>
+                                <div class="degree">Master of Management (program in English language)</div>
+                            </div>
+                        </div>
+                        <div class="education_item">
+                            <div class="education_header">
+                                <h6 class="place">NOVOSIBIRSK STATE UNIVERSITY</h6>
+                            </div>
+                            <div class="education_body">
+                                <div class="year">2016</div>
+                                <div class="degree">Bachelor of Economics</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="languages">
+            <div class="container">
+                <div class="section_wrap">
+                    <h5 class="section_title">Languages</h5>
+                    <div class="language_container">
+                        <div class="language_info">
+                            <div class="language"><strong>Russian   </strong> <br> native</div>
+                        </div>
+                        <div class="language_level"> 
+                            <div class="level_circle"></div>
+                            <div class="level_circle"></div>
+                            <div class="level_circle"></div>
+                            <div class="level_circle"></div>
+                            <div class="level_circle"></div>
+                        </div>
+                    </div>
+                    <div class="language_container">
+                        <div class="language_info">
+                            <div class="language"><strong>English   </strong> <br> fluent</div>
+                        </div>
+                        <div class="language_level"> 
+                            <div class="level_circle"></div>
+                            <div class="level_circle"></div>
+                            <div class="level_circle"></div>
+                            <div class="level_circle"></div>
+                            <div class="level_circle __empty"></div>
+                        </div>
+                    </div>
+                    <div class="language_container">
+                        <div class="language_info">
+                            <div class="language"><strong>Spanish   </strong> <br> Upper-intermediate</div>
+                        </div>
+                        <div class="language_level"> 
+                            <div class="level_circle"></div>
+                            <div class="level_circle"></div>
+                            <div class="level_circle"></div>
+                            <div class="level_circle __empty"></div>
+                            <div class="level_circle __empty"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_container">
+                <div class="github">
+                    <a href="https://github.com/Valeriejr13" target="blank"> 
+                        <img class="github_logo" src="images/github_logo.png" alt="github_logo">
+                        Valeriejr13
+                    </a> 
+                </div>
+                <div class="footer_year">2021</div>
+                <div class="school_logo">
+                    <a href="https://rs.school/js/" target="blank"><img class="school_logo_img" src="images/rs_school_logo.svg" alt="school_logo"></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="app.js"></script>
 </body>
 </html>
